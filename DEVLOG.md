@@ -9,3 +9,4 @@
 - Added in-memory notes list
 - Added `/notes` endpoint returning the notes list as JSON
 - Added comments explaining the concepts, however my understanding is still scarce. I am leaving the deeper theory for tomorrow
+- Ran the app using py -m uvicorn main:app --reload
