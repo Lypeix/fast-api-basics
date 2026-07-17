@@ -1,7 +1,7 @@
 # DEVLOG
 
 ## DAY 1 - STARTING THE PROJECT (17.07.2026)
-### Session 1 (~45mins):
+### Session 1 (~50mins):
 - Installed FastAPI
 - Created first FastAPI app instance
 - Added root endpoint with `@app.get("/")`
