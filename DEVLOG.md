@@ -8,7 +8,7 @@
 - Added first JSON response with a Python dict
 - Added in-memory notes list
 - Added `/notes` endpoint returning the notes list as JSON
-- Added comments explaining the concepts, however my understanding is still scarce. I am leaving the deeper theory for tomorrow
+- Added comments explaining the concepts, however my understanding is still rather small. I am leaving the deeper theory for tomorrow
 - Ran the app using py -m uvicorn main:app --reload
 
 ## DAY 2 OF PROGRESS (18.07.2026)
