@@ -17,3 +17,14 @@
 - Checked the automatic documentation at /docs
 - Added endpoint to get one note by id
 - Added comments explaining the process
+
+### Session 2 (~60mins)
+- Added helpers.py containing get_next_note_id(notes)
+- Passed the notes into the helper to avoid circular import
+- Added `NoteCreate` Pydantic model for note data
+- Added `POST /notes` for creating new notes
+- Added automatic ID generation based on the highest existing note id
+- Added new notes to the in-memory list
+- Made successful creation responses use HTTP 201 Created
+- Studied a bunch of theory regarding HTTP, status codes, POST, pydantic, JSON bodies and some other concepts involved in the code; I still need way more practice and theory 
+- Added comments explaining every addition
