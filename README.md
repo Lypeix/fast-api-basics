@@ -6,10 +6,6 @@ A small learning project for understanding FastAPI fundamentals: routes, HTTP me
 
 Learn how a Python function becomes an API endpoint.
 
-Previous projects used:
-
-CLI input -> Python function -> SQLite -> printed output
-
 This project introduces:
 
 HTTP request -> FastAPI endpoint -> Python function -> JSON response
@@ -31,24 +27,3 @@ HTTP request -> FastAPI endpoint -> Python function -> JSON response
 - [ ] Add endpoint to delete note: `DELETE /notes/{note_id}`
 - [ ] Add basic error handling with `HTTPException`
 - [ ] Add simple input validation through Pydantic
-
-## Concepts Practiced
-
-- FastAPI basics
-- API endpoints/routes
-- HTTP methods: `GET`, `POST`, `PUT`, `DELETE`
-- Path parameters
-- Request bodies
-- JSON responses
-- Pydantic models
-- Automatic Swagger docs
-- Basic API error handling
-- In-memory data storage
-
-## Planned File Structure
-
-```text
-fastapi-notes-intro/
-  main.py        # FastAPI app and endpoints
-  README.md      # Project documentation
-  DEVLOG.md      # Learning log
