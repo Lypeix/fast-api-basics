@@ -19,8 +19,8 @@ HTTP request -> FastAPI endpoint -> Python function -> JSON response
 - [x] Create basic FastAPI project structure
 - [x] Install FastAPI
 - [x] Create first `FastAPI()` app instance
-- [ ] Add root endpoint: `GET /`
-- [ ] Learn how to run the development server
+- [x] Add root endpoint: `GET /`
+- [x] Learn how to run the development server
 - [ ] Open automatic docs at `/docs`
 - [ ] Add in-memory notes list
 - [ ] Add endpoint to list notes: `GET /notes`
