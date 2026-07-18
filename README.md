@@ -25,8 +25,8 @@ HTTP request -> FastAPI endpoint -> Python function -> JSON response
 - [x] Add in-memory notes list
 - [x] Add endpoint to list notes: `GET /notes`
 - [x] Add endpoint to get one note by ID: `GET /notes/{note_id}`
-- [ ] Add request body model with Pydantic
-- [ ] Add endpoint to create note: `POST /notes`
+- [x] Add request body model with Pydantic
+- [x] Add endpoint to create note: `POST /notes`
 - [ ] Add endpoint to update note: `PUT /notes/{note_id}`
 - [ ] Add endpoint to delete note: `DELETE /notes/{note_id}`
 - [ ] Add basic error handling with `HTTPException`
