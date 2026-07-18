@@ -1,6 +1,8 @@
 from fastapi import FastAPI, status # imports the FastAPI class from the fastapi library
                                     # imports status which provides readable names for HTTP status-code numbers
-from pydantic import BaseModel # imports pydantic which FastAPI uses to describe, parse and validate incoming data
+
+from pydantic import BaseModel # imports BaseModel class from pydantic
+                               # FastAPI uses pydantic models to parse and validate incoming data
 from helpers import get_next_note_id
 
 app = FastAPI() # creates the object that stores all routes/endpoints and controls the API
@@ -64,7 +66,7 @@ def create_note(note_data: NoteCreate):
 # if validation is successful, note_data becomes a NoteCreate object
 
     new_note = {
-        "id": get_next_note_id(notes), # accesses get_next_note_id() with the notes list and stores the id
+        "id": get_next_note_id(notes), # calls get_next_note_id() with the notes list and stores the id
         "title": note_data.title, # accesses the validated title from NoteCreate and stores it
         "content": note_data.content # accesses the validated content from NoteCreate and stores it
     }
