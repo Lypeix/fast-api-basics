@@ -30,6 +30,6 @@
 - Added comments explaining every addition
 - I need way more practice with these new things
 
-### Session 2 (~35mins)
+### Session 3 (~35mins)
 - Rebuilt a reskinned version of the program from scratch
 - I still have a long way to go, but the patterns are certainly reinforcing.
