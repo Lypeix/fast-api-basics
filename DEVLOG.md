@@ -31,5 +31,5 @@
 - I need way more practice with these new things
 
 ### Session 3 (~35mins)
-- Rebuilt a reskinned version of the program from scratch
+- Rebuilt a planet-themed version of the program from scratch
 - I still have a long way to go, but the patterns are certainly reinforcing.
