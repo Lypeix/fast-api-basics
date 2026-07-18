@@ -14,6 +14,6 @@
 ## DAY 2 OF PROGRESS (18.07.2026)
 ### Session 1 (~40mins)
 - Reviewed concepts from Day 1 and basic API flow
-- Checked the automatic docks at /docks
+- Checked the automatic docs at /docs
 - Added endpoint to get one note by id
 - Added comments explaining the process
