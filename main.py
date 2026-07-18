@@ -66,12 +66,15 @@ def get_notes():
     return notes
     # returns the list of dictionaries that FastAPI automatically converts into JSON
 
-@app.get("/notes/{note_id}") # note id is path parameter: dynamic URL part that identifies a specific note, eg. GET /notes/1 makes note_id receive 1. bracers {} 
-                             # braces {} are FastAPI path parameter syntax
+@app.get("/notes/{note_id}") 
+# note id is path parameter: dynamic URL part that identifies a specific note, eg. GET /notes/1 makes note_id receive 1.
+# braces {} are FastAPI path parameter syntax
 
-def get_note(note_id: int): # FastAPI sends the note to note id and converts it into integer, then documents its type in /docs
-    for note in notes:
-        if note["id"] == note_id: # loop checks each dictionary for the matching id
+def get_note(note_id: int): 
+  # FastAPI validates and converts note_id into inter, then documents its type in /docs
+    
+  for note in notes:
+        if note["id"] == note_id: 
             return note
         
     return {"error": "Note not found"} 
