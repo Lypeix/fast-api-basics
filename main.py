@@ -71,7 +71,7 @@ def get_notes():
 
 def get_note(note_id: int): # FastAPI sends the note to note id and converts it into integer, then documents its type in /docs
     for note in notes:
-        if note[id] == note_id: # loop checks for the matching
+        if note["id"] == note_id: # loop checks each dictionary for the matching id
             return note
         
     return {"error": "Note not found"} 
