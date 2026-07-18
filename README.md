@@ -22,8 +22,8 @@ HTTP request -> FastAPI endpoint -> Python function -> JSON response
 - [x] Add root endpoint: `GET /`
 - [x] Learn how to run the development server
 - [ ] Open automatic docs at `/docs`
-- [ ] Add in-memory notes list
-- [ ] Add endpoint to list notes: `GET /notes`
+- [x] Add in-memory notes list
+- [x] Add endpoint to list notes: `GET /notes`
 - [ ] Add endpoint to get one note by ID: `GET /notes/{note_id}`
 - [ ] Add request body model with Pydantic
 - [ ] Add endpoint to create note: `POST /notes`
