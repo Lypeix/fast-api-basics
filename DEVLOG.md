@@ -26,5 +26,6 @@
 - Added automatic ID generation based on the highest existing note id
 - Added new notes to the in-memory list
 - Made successful creation responses use HTTP 201 Created
-- Studied a bunch of theory regarding HTTP, status codes, POST, pydantic, JSON bodies and some other concepts involved in the code; I still need way more practice and theory 
+- Studied a bunch of theory regarding HTTP, status codes, POST, pydantic, JSON bodies and API request-response flow 
 - Added comments explaining every addition
+- I need way more practice with these new things
