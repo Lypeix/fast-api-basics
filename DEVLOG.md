@@ -29,3 +29,7 @@
 - Studied a bunch of theory regarding HTTP, status codes, POST, pydantic, JSON bodies and API request-response flow 
 - Added comments explaining every addition
 - I need way more practice with these new things
+
+### Session 2 (~35mins)
+- Rebuilt a reskinned version of the program from scratch
+- I still have a long way to go, but the patterns are certainly reinforcing.
