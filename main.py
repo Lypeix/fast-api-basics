@@ -104,3 +104,17 @@ def update_note(note_id: int, note_data: NoteCreate):
             return note # FastAPI converts updated dict into JSON with the default status 200 OK
     
     return {"error": "Note not found"}
+
+@app.delete("/notes/{note_id}") # creates a DELETE endpoint that deletes existing resource
+
+def delete_note(note_id: int):
+    for idx, note in enumerate(notes):
+        if note["id"] == note_id:
+            deleted_note = notes.pop(idx) # deletes the note at its index from the list and returns its dict
+
+            return {
+                "message": "Successfuly deleted the note!",
+                "deleted_note": deleted_note
+            }
+        
+    return {"error": "Note not found"}
