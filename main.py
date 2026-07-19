@@ -78,3 +78,14 @@ def create_note(note_data: NoteCreate):
     return new_note
     # returns the new note dict, which then gets converted by FastAPI into a JSON body
     # because of the status_code above, the response uses HTTP 201 Created, which means that the request suceeded and a new resource (new note) was made
+
+@app.put("/notes/{note_id}") # creates PUT endpoint, purpose: replace or fully update existing resource
+def update_note(note_id: int, note_data: NoteCreate):
+    for note in notes:
+        if note["id"] == note_id: # note id is int, so fastapi converts and validates the URL value
+            note["title"] = note_data.title # due to this being typed through NoteCreate, Pydantic validates the JSON body and releases an python object
+            note["content"] = note_data.content
+
+            return note # updated dict gets converted into JSON with the default status 200 OK
+    
+    return {"error": "Note not found"}
