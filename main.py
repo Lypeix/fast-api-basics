@@ -1,3 +1,6 @@
+# Start the server from PowerShell:
+# py -m uvicorn main:app --reload
+
 from fastapi import FastAPI, status # imports the FastAPI class from the fastapi library
                                     # imports status which provides readable names for HTTP status-code numbers
 
