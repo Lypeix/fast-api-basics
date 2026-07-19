@@ -1,8 +1,9 @@
 # Start the server from PowerShell:
 # py -m uvicorn main:app --reload
 
-from fastapi import FastAPI, status # imports the FastAPI class from the fastapi library
+from fastapi import FastAPI, status, HTTPException # imports the FastAPI class from the fastapi library
                                     # imports status which provides readable names for HTTP status-code numbers
+                                    # imports HTTPException which stops current execution endpoint's function and returns a specified HTTP error response
 
 from pydantic import BaseModel # imports BaseModel class from pydantic
                                # FastAPI uses pydantic models to parse and validate incoming data
@@ -63,7 +64,10 @@ def get_note(note_id: int): # FastAPI sends the note to note id and converts it 
         if note["id"] == note_id: # loop checks each dictionary for the matching id
             return note
         
-    return {"error": "Note not found"} 
+    raise HTTPException(
+        status_code=status.HTTP_404_NOT_FOUND,
+        detail="Note not found"
+    )
 
 @app.post("/notes", status_code=status.HTTP_201_CREATED)
 # creates a POST endpoint at "/notes"
@@ -103,7 +107,10 @@ def update_note(note_id: int, note_data: NoteCreate):
 
             return note # FastAPI converts updated dict into JSON with the default status 200 OK
     
-    return {"error": "Note not found"}
+    raise HTTPException(
+        status_code=status.HTTP_404_NOT_FOUND,
+        detail="Note not found"
+    )
 
 @app.delete("/notes/{note_id}") # creates a DELETE endpoint that deletes existing resource
 
@@ -117,4 +124,7 @@ def delete_note(note_id: int):
                 "deleted_note": deleted_note
             }
         
-    return {"error": "Note not found"}
+    raise HTTPException(
+        status_code=status.HTTP_404_NOT_FOUND,
+        detail="Note not found"
+    )
