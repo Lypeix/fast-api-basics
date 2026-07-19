@@ -33,3 +33,11 @@
 ### Session 3 (~35mins)
 - Rebuilt a planet-themed version of the program from scratch
 - I still have a long way to go, but the patterns are certainly reinforcing.
+
+## DAY 3 OF PROGRESS (19.07.2026)
+### Session 1 (~70mins)
+- Added `@app.put` endpoint
+- Added `@app.delete` endpoint
+- Added HTTPException and replaced every return {"error":"x"} returning 200 OK by defaut with raise HTTPException returning 404 error
+- Tried out SwaggerUI at `/docs` to send and check API requests
+- Tested PUT requests
