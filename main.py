@@ -5,15 +5,16 @@ from fastapi import FastAPI, status, HTTPException # imports the FastAPI class f
                                     # imports status which provides readable names for HTTP status-code numbers
                                     # imports HTTPException which stops current execution endpoint's function and returns a specified HTTP error response
 
-from pydantic import BaseModel # imports BaseModel class from pydantic
-                               # FastAPI uses pydantic models to parse and validate incoming data
+from pydantic import BaseModel, Field # imports BaseModel class from pydantic
+                                      # imports Field for adding validation rules like min/max length to model fields
+                                      # FastAPI uses pydantic models to parse and validate incoming data
 from helpers import get_next_note_id
 
 app = FastAPI() # creates the object that stores all routes/endpoints and controls the API
 
 class NoteCreate(BaseModel):
-    title: str
-    content: str
+    title: str = Field(min_length=2, max_length=50)
+    content: str = Field(min_length=10, max_length=500)
 
 notes = [ 
         
