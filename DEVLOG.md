@@ -42,5 +42,6 @@
 - Tried out SwaggerUI at `/docs` to send and check API requests
 - Tested PUT requests
 
-### Session 2 (~5mins)
+### Session 2 (~20mins)
 - Added and explained Field
+- Reconstructed the implementations from last project in space_reskin.py
