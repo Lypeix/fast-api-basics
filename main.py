@@ -14,10 +14,20 @@ class NoteCreate(BaseModel):
 notes = [ 
         
         {"id": 1,
-        "title": "Plushies",
-        "content": "I want to buy myself an aquarium with swimming plushies"
-        }
+            "title": "Plushies",
+            "content": "I want to buy myself an aquarium with swimming plushies"
+        },
     
+        {"id": 2,
+            "title": "Jogging",
+            "content": "2 hours of running non-stop during intense heat is surely a memorable moment"
+        },
+
+        {"id": 3,
+            "title": "White Holes",
+            "content": "White holes are real"
+        }
+
     ]
     # creates in-memory list of notes, which means the notes exist only when the server is running
     # this data resets whenever server gets restarted
