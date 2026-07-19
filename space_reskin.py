@@ -73,7 +73,7 @@ def update_planet(planet_id: int, planet_data: PlanetCreate):
 def delete_planet(planet_id: int):
     for idx, planet in enumerate(planets):
         if planet["id"] == planet_id:
-            obliterated_planet = planet.pop(idx)
+            obliterated_planet = planets.pop(idx)
 
             return {
                 "message": "Imperator Palpatine, the planet was successfuly destroyed",
