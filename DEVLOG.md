@@ -44,4 +44,4 @@
 
 ### Session 2 (~20mins)
 - Added and explained Field
-- Reconstructed the implementations from last project in space_reskin.py
+- Reconstructed the implementations from last session in space_reskin.py
