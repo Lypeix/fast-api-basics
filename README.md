@@ -24,6 +24,6 @@ HTTP request -> FastAPI endpoint -> Python function -> JSON response
 - [x] Add request body model with Pydantic
 - [x] Add endpoint to create note: `POST /notes`
 - [x] Add endpoint to update note: `PUT /notes/{note_id}`
-- [ ] Add endpoint to delete note: `DELETE /notes/{note_id}`
+- [x] Add endpoint to delete note: `DELETE /notes/{note_id}`
 - [ ] Add basic error handling with `HTTPException`
 - [ ] Add simple input validation through Pydantic
